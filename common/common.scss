@@ -165,11 +165,15 @@ a.play_now_btn{
         align-items: center;
         justify-content: flex-end;
         .social-link {
-          margin: 20px 10px;
+          padding: 20px 10px;
+          margin: 0 3px;
           display: flex;
           align-items: center;
           justify-content: center;
-  
+          color: var(--secondary-medium);
+          &:hover{
+            color: var(--secondary-low);
+          }
           .d-icon {
             color: $light;
             min-width: unset;
