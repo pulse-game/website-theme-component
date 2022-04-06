@@ -7,6 +7,10 @@ Base_url:
   description:
     en: "The base URL of the homepage, used in links."
 
+Enable_footer:
+  default: true
+  description:
+    en: "Uncheck this if you want to hide the footer"
 Heading:
   default: ""
   max: 25

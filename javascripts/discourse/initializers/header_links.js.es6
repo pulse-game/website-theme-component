@@ -4,6 +4,9 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 export default {
     name: 'header_links',
     initialize() {
+        if(!settings.Enable_header_links){
+            return;
+        }
         // Add links
         // Got code from this plugin: https://github.com/discourse/discourse-custom-header-links/blob/main/javascripts/discourse/initializers/discourse-custom-header-links.js.es6
         withPluginApi("0.8.20", (api) => {
@@ -16,7 +19,7 @@ export default {
                 h("li.headerLink${deviceClass}.hide_on_small_screen${linkClass}", h("a.play_now_btn.btn", {title: "Play Now", href: base_url+"/play_now/",}, "PLAY NOW")),
             ];
             api.decorateWidget("header-buttons:before", (helper) => {
-                return helper.h("ul.custom-header-links", headerLinks);
+                return helper.h("ul.custom-header-links", headerLinks);  // Add links in header
             });
             $("body").on("click", ".hamburger-dropdown", function(){  // Add links to hamburger menu on small screens
                 setTimeout(function(){

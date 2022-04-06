@@ -6,6 +6,9 @@ const getClassName = text => {
   export default {
     setupComponent(args, component) {
       try {
+          if(!settings.Enable_footer){
+              return;
+          }
         const splitLinkSections = settings.Link_sections.split("|").filter(Boolean);
         const splitLinks = settings.Links.split("|").filter(Boolean);
         const splitSmallLinks = settings.Small_links.split("|").filter(Boolean);
