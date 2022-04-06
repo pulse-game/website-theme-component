@@ -1,5 +1,3 @@
-$dark: #111111;
-$light: #FFF;
 $error: #dc3545;
 $dark_error: #b92b39;
 $very_small: 500px;
@@ -51,7 +49,7 @@ $medium: 640px;  // 724px
 a.play_now_btn{
   background-color: $error;
   border-color: $error;
-  color: $dark !important;
+  color: var(--header_background) !important;
   &:hover{
     background-color: $dark_error !important;
     opacity: 0.8;
@@ -117,12 +115,12 @@ a.play_now_btn{
 .custom-footer {
     display: flex;
     flex-wrap: wrap;
-    background: $dark;
+    background: var(--header_background);
     .flexbox {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      color: $light;
+      color: var(--primary);
       padding: 2em 0 1em 0;
     }
     .first-box {
