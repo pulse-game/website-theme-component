@@ -153,6 +153,7 @@ a.play_now_btn{
       width: 100%;
       display: flex;
       align-items: center;
+      justify-content: space-around;
       border-top: 1px solid rgba(var(--primary-low-rgb), 0.05);
       .social {
         display: flex;
@@ -181,7 +182,7 @@ a.play_now_btn{
       }
     }
     .footer-links {
-      flex: 1;
+      //flex: 1;
     }
     .list span {
       font-weight: bold;

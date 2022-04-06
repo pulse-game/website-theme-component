@@ -8,8 +8,7 @@ export default {
         // Got code from this plugin: https://github.com/discourse/discourse-custom-header-links/blob/main/javascripts/discourse/initializers/discourse-custom-header-links.js.es6
         withPluginApi("0.8.20", (api) => {
             const deviceClass = '.vdm';  // View: vdm = desktop and mobile, vdo = desktop only, vmo = mobile only.
-            const base_url = "https://pulse-game.com/";
-            const base_forum = "https://forum.pulse-game.com/";
+            const base_url = settings.Base_url; // "https://pulse-game.com/";
             const headerLinks = [
                 h("li.headerLink${deviceClass}.keep${linkClass}", h("a.active.fw-bold", {title: "Forum Homepage", href: "/",}, "FORUM")),
                 h("li.headerLink${deviceClass}.hide_on_medium_screen${linkClass}", h("a", {title: "Token", href: base_url+"/tokenomics/",}, "TOKEN")),
@@ -36,7 +35,7 @@ export default {
 
             // Change header logo link to base_url instead of forum.
             $(document).ready(function(){
-                $("#site-logo").closest("a").attr("href", base_url);
+                $("#site-logo").closest("a").attr("href", base_url);  // base_url
             });
             
         });

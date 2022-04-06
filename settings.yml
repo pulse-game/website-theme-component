@@ -2,18 +2,18 @@ Enable_header_links:
   default: true
   description:
     en: "Check this if you want to see the header links"
-Header_logo_link_to:
+Base_url:
   default: "https://pulse-game.com/"
   description:
-    en: "Where do you want header logo to link to, write \"/\" to link to forum homepage."
+    en: "The base URL of the homepage, used in links."
 
 Heading:
-  default: "This is a header"
+  default: ""
   max: 25
   description:
     en: "Text for the heading in the footer - you can use your site name for example - Max length 25 characters"
 Blurb:
-  default: "Ius vitae ornatus at, ei mea sumo quot dicant. Ei tale democritum eos, in mea timeam accumsan forensibus. Ei his aperiam suavitate. Et debitis convenire sea, viris dictas latine."
+  default: ""
   max: 180
   description:
     en: "Enter a short blurb about your community - Max length 180 characters"
@@ -32,7 +32,7 @@ Links:
 Small_links:
   type: list
   list_type: simple
-  default: "Privacy, #, self|Terms of service, #, self| About, #, self"
+  default: "Recruit A Friend, https://pulse-game.com/recruit-a-friend, self|Exchange, #, self| Merch, https://pulse-game.com/merch, self"
   description:
     en: "You can add small links at the bottom of the footer like Terms of Service and Privacy. One item per line in this order:<br>Text, URL, target<br><b>Text:</b> The text that shows for the small link<br><b>URL:</b> The path of the link<br><b>Target:</b> Use blank to open the link in a new tab and use self to open it in the same tab"
 Social_links:
