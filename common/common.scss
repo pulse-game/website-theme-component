@@ -175,7 +175,6 @@ a.play_now_btn{
             color: var(--secondary-low);
           }
           .d-icon {
-            color: $light;
             min-width: unset;
             margin: 0;
             font-size: $font-up-2;
@@ -184,9 +183,12 @@ a.play_now_btn{
         }
       }
       .small-link {
-        color: var(--secondary-high);
         margin: 0 0.25em;
         font-size: $font-down-2;
+        color: var(--secondary-medium);
+        &:hover{
+          color: var(--secondary-low);
+        }
       }
     }
     .footer-links {
