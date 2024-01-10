@@ -13,8 +13,8 @@ export default {
             const deviceClass = '.vdm';  // View: vdm = desktop and mobile, vdo = desktop only, vmo = mobile only.
             const base_url = settings.Base_url; // "https://pulse-game.com/";
             const fontAwesome = h("link", {rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"});
-            api.decorateWidget("head", (helper) => {
-                return helper.h(fontAwesome);  // Add fontawesome to forum
+            api.decorateWidget("header-buttons:before", (helper) => {
+                return helper.h(fontAwesome);  // Add fontawesome to forum header
             });
             const headerLinks = [
                 h("li.headerLink${deviceClass}.keep${linkClass}", h("a.active.fw-bold", {title: "Homepage", href: base_url,}, h("i.fa-solid.fa-house", ""))),
