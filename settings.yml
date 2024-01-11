@@ -3,7 +3,7 @@ Enable_header_links:
   description:
     en: "Check this if you want to see the header links"
 Base_url:
-  default: "https://pulse-game.com/"
+  default: "https://atone.net/"
   description:
     en: "The base URL of the homepage, used in links."
 
@@ -50,7 +50,7 @@ Show_footer_on_login_required_page:
   description:
     en: "Check this setting if you want the footer to be displayed on the login-required page (only applies if your site is private)"
 svg_icons:
-  default: "fab-discord|fab-reddit|fab-twitch|fab-youtube|fab-tiktok|fab-twitter|fab-facebook|fab-instagram|fab-house|fab-gamepad"
+  default: "fab-discord|fab-reddit|fab-twitch|fab-youtube|fab-tiktok|fab-twitter|fab-facebook|fab-instagram|fa-house|fa-gamepad"
   type: "list"
   list_type: "compact"
   description: "List of FontAwesome 5 icons used in the social links setting above. "
