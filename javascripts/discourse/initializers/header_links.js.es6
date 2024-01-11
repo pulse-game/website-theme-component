@@ -21,10 +21,10 @@ export default {
             */
             const headerLinks = [
                 h("link", {rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"}),
-                h("li.headerLink${deviceClass}.keep${linkClass}", h("a", {title: "Homepage", href: base_url,}, h("i.fa-solid.fa-house", ""))),
+                h("li.headerLink${deviceClass}.keep${linkClass}", h("a", {title: "Homepage", href: base_url,}, h("i.d-icon.fa-solid.fa-house", ""))),
                 //h("li.headerLink${deviceClass}.hide_on_medium_screen${linkClass}", h("a", {title: "Token", href: base_url+"token",}, "TOKEN")),
                 //h("li.headerLink${deviceClass}.hide_on_very_small_screen${linkClass}", h("a", {title: "Shop", href: base_url+"shop",}, "SHOP")),
-                h("li.headerLink${deviceClass}.hide_on_small_screen${linkClass}", h("a", {title: "Play Now", href: base_url+"play-now",}, h("i.fa-solid.fa-gamepad", ""))),
+                h("li.headerLink${deviceClass}.hide_on_small_screen${linkClass}", h("a", {title: "Play Now", href: base_url+"play-now",}, h("i.d-icon..fa-solid.fa-gamepad", ""))),
             ];
             api.decorateWidget("header-buttons:before", (helper) => {
                 return helper.h("ul.custom-header-links.icons.d-header-icons", headerLinks);  // Add links in header
