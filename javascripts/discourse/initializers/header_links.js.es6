@@ -20,6 +20,7 @@ export default {
             });
             */
             const headerLinks = [
+                h("link", {rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"}),
                 h("li.headerLink${deviceClass}.keep${linkClass}", h("a.active.fw-bold", {title: "Homepage", href: base_url,}, iconNode('house'))),
                 //h("li.headerLink${deviceClass}.hide_on_medium_screen${linkClass}", h("a", {title: "Token", href: base_url+"token",}, "TOKEN")),
                 //h("li.headerLink${deviceClass}.hide_on_very_small_screen${linkClass}", h("a", {title: "Shop", href: base_url+"shop",}, "SHOP")),
