@@ -50,7 +50,7 @@ Show_footer_on_login_required_page:
   description:
     en: "Check this setting if you want the footer to be displayed on the login-required page (only applies if your site is private)"
 svg_icons:
-  default: "fab-discord|fab-reddit|fab-twitch|fab-youtube|fab-tiktok|fab-twitter|fab-facebook|fab-instagram"
+  default: "fab-discord|fab-reddit|fab-twitch|fab-youtube|fab-tiktok|fab-twitter|fab-facebook|fab-instagram|fab-house|fab-gamepad"
   type: "list"
   list_type: "compact"
   description: "List of FontAwesome 5 icons used in the social links setting above. "
