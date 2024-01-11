@@ -24,17 +24,6 @@ export default {
                 return helper.h("ul.custom-header-links.icons.d-header-icons", headerLinks);  // Add links in header
             });
             
-
-            // Add the game name to the logo
-            api.decorateWidget("home-logo:after", helper => {
-                const titleVisible = helper.attrs.minimized;
-                const headerText = "ATONE";
-                
-                if (!titleVisible) {
-                    return api.h("span.header-text", headerText);
-                }
-            });
-            
         });
     }
   };
